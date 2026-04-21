@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOY STORY SHOP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container topbar-content">
+            <div>
+                <h1 class="logo">Toy Story Shop</h1>
+                <p class="subtitle">Controle de fluxo de produtos da loja</p>
+            </div>
+
+            <nav class="menu">
+                <a href="{{ url_for('index') }}">Início</a>
+                <a href="{{ url_for('adicionar') }}">Adicionar</a>
+                <a href="{{ url_for('remover') }}">Remover</a>
+                <a href="{{ url_for('atualizar') }}">Atualizar</a>
+                <a href="{{ url_for('listar') }}">Listar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alerts">
+                    {% for message in messages %}
+                        <div class="alert">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

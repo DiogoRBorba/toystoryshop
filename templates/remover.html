@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-header">
+    <h2>Remover Brinquedo</h2>
+    <p>Informe o ID do produto que deseja remover.</p>
+</section>
+
+<section class="panel">
+    <form method="POST" class="form">
+        <label>
+            ID do produto
+            <input type="number" name="id" min="1" placeholder="Ex: 1" required>
+        </label>
+
+        <button type="submit" class="danger">Remover Produto</button>
+    </form>
+</section>
+
+<section class="panel">
+    <h3 class="section-title">Produtos cadastrados</h3>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                    <tr>
+                        <td>{{ produto.id }}</td>
+                        <td>{{ produto.nome }}</td>
+                        <td>{{ produto.categoria }}</td>
+                        <td>{{ produto.quantidade }}</td>
+                        <td>R$ {{ "%.2f"|format(produto.preco) }}</td>
+                    </tr>
+                {% else %}
+                    <tr>
+                        <td colspan="5">Nenhum produto cadastrado.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-badge">TOY STORY SHOP</div>
+    <h2>Controle Básico de Fluxo</h2>
+    <p>
+        Sistema simples e visual para cadastrar, atualizar, remover e listar
+        brinquedos do estoque da loja.
+    </p>
+
+    <div class="cards">
+        <a class="card" href="{{ url_for('adicionar') }}">
+            <div class="card-icon">+</div>
+            <h3>Adicionar Brinquedo</h3>
+            <p>Inclua novos produtos no estoque de forma rápida.</p>
+        </a>
+
+        <a class="card" href="{{ url_for('remover') }}">
+            <div class="card-icon">-</div>
+            <h3>Remover Brinquedo</h3>
+            <p>Retire itens cadastrados do controle de estoque.</p>
+        </a>
+
+        <a class="card" href="{{ url_for('atualizar') }}">
+            <div class="card-icon">↻</div>
+            <h3>Atualizar Estoque</h3>
+            <p>Altere quantidade e preço dos produtos existentes.</p>
+        </a>
+
+        <a class="card" href="{{ url_for('listar') }}">
+            <div class="card-icon">≡</div>
+            <h3>Listar Estoque</h3>
+            <p>Visualize todos os brinquedos cadastrados na loja.</p>
+        </a>
+    </div>
+</section>
+{% endblock %}
