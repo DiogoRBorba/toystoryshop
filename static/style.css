@@ -7,7 +7,7 @@
 :root {
     --bg: #eef5f7;
     --bg-strong: #d9e8ee;
-    --primary: #264653;
+    --primary: #263d53; /* #264653 */
     --primary-hover: #1d3640;
     --secondary: #4f6d7a;
     --white: #ffffff;
@@ -34,7 +34,7 @@ body {
 }
 
 .topbar {
-    background: linear-gradient(135deg, #264653 0%, #355f71 100%);
+    background: linear-gradient(135deg, #006199 0%, #528dbe 100%);
     color: var(--white);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
@@ -49,6 +49,7 @@ body {
 
 .logo {
     font-size: 38px;
+    color: #ffd9a1;
     font-weight: 800;
     letter-spacing: 0.5px;
     margin-bottom: 6px;
@@ -167,6 +168,15 @@ body {
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 18px;
+}
+.remover{
+    background: linear-gradient(135deg, #a54141 0%, #ce628a 100%);
+}
+.adicionar{
+    background: linear-gradient(135deg, #307251 0%, #4e8f6f 100%);
+}
+.listar{
+    background: linear-gradient(135deg, #e2b53b 0%, #c0b757 100%);
 }
 
 .card h3 {
