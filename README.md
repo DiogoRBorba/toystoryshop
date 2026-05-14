@@ -19,7 +19,7 @@ O sistema possui como principais objetivos:
 ## Tecnologias Utilizadas
 
 - Python
-- Flask
+- flask
 - HTML5
 - CSS3
 
