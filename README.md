@@ -6,7 +6,7 @@ O Toy Story Shop é um sistema desenvolvido para controle de fluxo e gerenciamen
 
 O projeto foi criado com foco acadêmico utilizando Python e Flask para desenvolver uma aplicação simples, organizada e funcional, permitindo o gerenciamento eficiente dos produtos da loja.
 
-## Objetivo
+## Objetivos
 
 O sistema possui como principais objetivos:
 
