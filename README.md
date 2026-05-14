@@ -1,16 +1,14 @@
-﻿# 🧸 Toy Story Shop
+# Toy Story Shop
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
-O **Toy Story Shop** é um sistema desenvolvido para controle de fluxo e gerenciamento de estoque de uma loja de brinquedos.
+O Toy Story Shop é um sistema desenvolvido para controle de fluxo e gerenciamento de estoque de uma loja de brinquedos.
 
-O projeto foi criado com foco acadêmico, utilizando Python e Flask para desenvolver uma aplicação simples, organizada e funcional.
+O projeto foi criado com foco acadêmico utilizando Python e Flask para desenvolver uma aplicação simples, organizada e funcional, permitindo o gerenciamento eficiente dos produtos da loja.
 
----
+## Objetivo
 
-## 🎯 Objetivo
-
-O sistema tem como objetivo:
+O sistema possui como principais objetivos:
 
 - Organizar o estoque da loja
 - Facilitar o cadastro de brinquedos
@@ -18,9 +16,7 @@ O sistema tem como objetivo:
 - Melhorar a visualização das informações
 - Simular um sistema real de gerenciamento
 
----
-
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Python
 - Flask
@@ -28,49 +24,39 @@ O sistema tem como objetivo:
 - CSS3
 - JavaScript
 
----
+## Funcionalidades
 
-## ⚙️ Funcionalidades
+- Adicionar brinquedos
+- Remover brinquedos
+- Atualizar estoque
+- Listar produtos disponíveis
+- Encerrar o sistema
 
-- ➕ Adicionar brinquedos
-- ❌ Remover brinquedos
-- 🔄 Atualizar estoque
-- 📋 Listar produtos disponíveis
-- 🚪 Encerrar sistema
+## Estrutura do Sistema
 
----
-
-## 🧠 Estrutura do Sistema
-
-O sistema funciona através do seguinte fluxo:
+O sistema segue o seguinte fluxo de funcionamento:
 
 ```text
-Menu → Escolha do usuário → Executa função → Retorna ao menu
+Menu → Escolha do usuário → Execução da função → Retorno ao menu
 ```
 
----
-
-## 👨‍💻 Integrantes do Grupo
+## Integrantes do Grupo
 
 - Gustavo Diniz
 - Diogo Borba
 - Henderson Reuel
 - Bruno Ramos
 
----
+## Como Executar o Projeto
 
-## ▶️ Como Executar o Projeto
-
-1. Clone o repositório
-2. Abra o projeto no VS Code
-3. Execute o seguinte comando:
+1. Clonar o repositório
+2. Abrir o projeto no VS Code
+3. Executar o seguinte comando:
 
 ```bash
 python app.py
 ```
 
----
-
-## 📚 Projeto Acadêmico
+## Projeto Acadêmico
 
 Projeto desenvolvido para fins educacionais e acadêmicos.
