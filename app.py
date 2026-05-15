@@ -151,6 +151,7 @@ def atualizar():
     return render_template("atualizar.html", produtos=produtos)
 
 
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     app.run(debug=True)
